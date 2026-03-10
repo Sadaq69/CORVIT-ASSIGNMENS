@@ -1,0 +1,18 @@
+h1{
+    color: #26aa05;
+    text-align: center;
+    font-weight:2; 
+    letter-spacing: 3px; 
+}
+a{
+    text-decoration: none;
+    cursor:crosshair;
+}
+p{
+    font-family: "Playwrite NZ Basic";
+    word-spacing: 10px;
+    text-transform: capitalize;
+}
+ul{
+    list-style-type:"🔱";
+}

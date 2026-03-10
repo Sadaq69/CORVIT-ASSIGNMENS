@@ -1,0 +1,175 @@
+/* Universal selector (to apply on all of the selectors) */
+* {
+  /* background-color: #cfe1f016; */
+  color: aliceblue;
+  /* margin: 0px;
+  padding: 0px; */
+}
+/* element selector (to select the element directly)*/
+h1 {
+  color: blue;
+}
+/* Class Selector (same name for same style) */
+.okay {
+  color: darkcyan;
+}
+/* ID selector (ro select single item to style)*/
+#ola {
+  color: purple;
+}
+/* Group selector, List selector (to select the tags for same styling) */
+h1,
+h2 {
+  font-style: italic;
+}
+/* Adjacent selector  (to select the tag next to another tag not all just 1)*/
+h3 + p {
+  background-color: rgb(3, 232, 232);
+}
+/* Descendant selcetor (to select the child whos name is selected , ignoring the other midway childs) */
+ol a {
+  color: green;
+}
+/* Direct child (to select the direct child of tag) */
+p > span {
+  color: #eb4c4c;
+}
+/* Attribute Selector (to select the attributes of tags) */
+input[type="text"] {
+  color: #4a651e;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: burlywood;
+}
+ul > li {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: "📌";
+}
+li {
+  list-style-type: upper-roman;
+}
+#oi p {
+  background-color: aquamarine;
+}
+/* pseudo code that is use to take action or act on taken action */
+
+/* it is use to chnage in hover of curser action */
+#act:hover {
+  color: rgb(11, 0, 0);
+  background-color: #a4d903;
+}
+/* it is used to chnage in curser */
+#act {
+  cursor: wait;
+}
+/* to make chnage when i click over text/button/anchor-tag */
+#act:active {
+  font-weight: bold;
+  color: #eb4c4c;
+  background: #39c0f6;
+}
+/* it is used to select the single child i want to choose like 2nd pragraph of div section */
+#lp p:nth-child(2) {
+  font-size: larger;
+  background-color: rgba(0, 0, 0, 0.384);
+}
+/*  use this to select the child of parent as two ways type number of child you want (2) it will only do for one time 2nd paragraph, add(2n) means repeat to every 2nd child, (2n+1)means select every 2nd para and starts from 1st to count */
+#op p:nth-of-type(2n + 1) {
+  background: wheat;
+}
+input[type="button"]:hover {
+  color: aquamarine;
+}
+input[type="button"]:active {
+  color: #a4d903;
+}
+input[type="button"]:checked {
+  background-color: blue;
+}
+/* Pseudo Elements */
+
+/* Selection selector,style the selection area */
+
+#pe::selection {
+  background-color: #74e953;
+}
+/* ::first-letter, use to make first letter style of selected tag*/
+#pe::first-letter {
+  font-size: 50px;
+}
+#pe::first-line {
+  color: #74e953;
+  background-color: #4a651e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Display Property */
+
+/* div block level element */
+/* use of display on div*/
+#dd {
+  background-color: #02a8df;
+  display: inline;
+}
+#dt {
+  background-color: aquamarine;
+  display: inline-block;
+}
+/* span element */
+#ss {
+  background-color: #ff0000;
+  display: block;
+}
+#se {
+  background-color: #ed8787;
+}
+.aloo {
+  background-color: blue;
+  width: 100%;
+  height: 100px;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+
+  /* left: 100px;
+  bottom: 200px; */
+}
+.alii {
+  background-color: #ff0000;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px;
+  padding: 20px;
+  border: 10px solid beige;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(peakpx.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: justify;
+}
+.flexy {
+  height: 300px;
+  width: 600px;
+  border: 10px solid rgb(245, 208, 208);
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* flex-direction: row; */
+  /* flex-wrap: ;  */
+}
+.box {
+  text-align: center;
+  align-content: center;
+  color: black;
+  background: wheat;
+  border: 1px solid honeydew;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
